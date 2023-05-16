@@ -34,7 +34,14 @@
     
   }
 
+  a {
+    text-decoration: none;
+    color: white;
+  }
   
+  a:hover {
+    color: grey;
+  }
 
   #content {
     display: flex;
@@ -73,6 +80,29 @@
     align-items: center;
   }
 
+  #video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  
+  .hardvideo:hover  {
+    filter: grayscale(100%);
+    cursor: pointer;
+  }
+
+  
+  .hardvideo  {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    transition: filter 0.3s;
+  }
+
   .dancertext {
     color: white;
     position: absolute;
@@ -80,6 +110,23 @@
     top: 80%;
     
   }
+
+  .hardbodytext {
+    color: white;
+    font-family: Super;
+    font-size: 30px;
+    
+  }
+
+  .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
   
   svg {
     fill: #FFFFFF;
@@ -88,6 +135,7 @@
     left: 30%; 
     transform: translate(-50%, -50%);
     z-index: 1;
+    cursor: pointer;
   }
 
   svg:hover {
@@ -105,6 +153,10 @@
   }
 
   #photo2 img {
+    padding: 20px;
+  }
+
+  #video video {
     padding: 20px;
   }
 
@@ -129,10 +181,13 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    font-size: 50px;
     transform: translate(-50%, -50%);
     text-align: center;
     font-family: 'Super', sans-serif;
   }
+
+ 
   
   .dancerimg:hover .overlay {
     opacity: 1;
